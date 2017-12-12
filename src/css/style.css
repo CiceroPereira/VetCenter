@@ -1,0 +1,46 @@
+.top{
+	width: 100%;
+	height: 200px;
+	background: #01579b;
+	padding: 20px;
+	text-align: center;
+}
+
+.top img{
+	height: 100%;
+	width: auto;
+	background: white;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+.navbar .container-fluid{
+	padding: 0;
+}
+
+.nav.navbar-collapse{
+	padding: 0;
+}
+
+.container{
+
+border-radius: 10px;
+
+
+}
+
+.sebm-google-map-container {
+  height: 500px;
+  width: 1150px;
+}
+
+textarea{
+	resize: none;
+	overflow: auto;
+	width: 100%;
+
+
+}
+
+
+

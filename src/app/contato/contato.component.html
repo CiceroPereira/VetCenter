@@ -1,0 +1,82 @@
+<div class="container">
+<form>
+	<div class="jumbotron" style="width: 80%; margin:auto;padding: 30px">
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="form-group">
+				<label>Nome</label>
+				<div class="input-group">
+				  <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
+				  <!--input type="text" class="form-control" placeholder="Nome" aria-describedby="basic-addon1"-->
+				  <input type="text" #contatoInput class="form-control" placeholder="Nome" aria-describedby="basic-addon1" required minlength="3" maxlength="50">
+				</div>
+				</div>
+			</div>
+			<div class="col-xs-12">
+				<div class="form-group">
+				<label>Email</label>
+				<div class="input-group">
+				  <span class="input-group-addon" id="basic-addon1"><i class="fa fa-envelope"></i></span>
+				  <input type="email" #contato2Input class="form-control" placeholder="Email" aria-describedby="basic-addon1" required inputmode="inputmode">
+				</div>
+				</div>
+			</div>
+			<div class="col-xs-12">
+				<div class="form-group">
+				<label>Telefone</label>
+				<div class="input-group">
+				  <span class="input-group-addon" id="basic-addon1"><i class="fa fa-phone"></i></span>
+				  <input type="tel" #contato3Input required="required" class="form-control telefone" placeholder="Telefone" aria-describedby="basic-addon1" required inputmode="inputmode" required maxlength="11" required minlength="11">
+				</div>
+				</div>
+			</div>
+			<div class= "col-xs-12">
+				<div class = "form-group">
+				<label>Assunto</label>
+				<div class = "input-group">
+					<select #contato4Input class = "form-control" required="required">
+						<option>Informação</option>
+						<option>Critica</option>
+						<option>Elogio</option>
+						<option>Sugestão</option>
+						<option>Reclamação</option>
+						<option>Outros</option>
+					</select>
+				</div>	
+				</div>
+			</div>	
+			<div class="col-xs-12">
+				<div class="form-group">
+					<label>Mensagem</label>
+				<div class="input-group">
+			<!--	  <span class="input-group-addon" id="basic-addon1"><i class="fa fa-phone"></i></span> --> 
+				  <textarea  #contato5Input rows="4" cols="123" required="required" ></textarea> 
+				</div>
+				</div>
+				
+			</div>
+
+			<div class="col-xs-12">
+				<button type="submit" class="btn btn-primary btn-block" (click)="onAddContato(contatoInput.value,contato2Input.value,contato3Input.value,contato4Input.value,contato5Input.value)">
+					Enviar
+				</button>
+			<!--	<button (click)="onAddContato(contato2Input.value)">
+					Add Email
+				</button>
+				<button (click)="onAddContato(contato3Input.value)">
+					Add Telefone
+				</button>
+				<button (click)="onAddContato(contato4Input.value)">
+					Add Assunto
+				</button>
+				<button (click)="onAddContato(contato5Input.value)">
+					Add Mensagem
+				</button> -->
+				
+			</div>
+		</div>
+	</div>
+	</form>
+</div>
+
+
